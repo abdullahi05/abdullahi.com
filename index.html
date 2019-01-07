@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>abdullahi.com</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--navtabs sector-->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#faqs">FAQS</a></li>
+        <li id="myBtn"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade in active text-center"id="about">
+          <div class="jina">
+          <img src="images/port.jpeg" alt="port">
+          <br>
+          <br>
+          <h4>Web Designer, Developer And Marketer</h4>
+          <br>
+          <br>
+          <p style="font-family:'Sofia'">Abdullahi mohamed</p>
+          <hr>
+        </div>
+
+        </div>
+
+        <!--portfolio sector-->
+        <div id="portfolio" class="tab-pane fade">
+          <div class="row"style="padding:30px;">
+            <div class="col-sm-3">
+              <img src="images/mohassan.png" alt="moha"style="border-radius:50%;width:100px;">
+            </div>
+            <div class="col-sm-4">
+              <h6>Abdullahi mohamed</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore
+                 culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="vl"> </div>
+            <div class="col-sm-4">
+              <h6>Abdullahi mohamed</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore
+                 culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="img">
+            <div class="col-sm-4 thumbnail">
+                <img src="images/stefan3.jpg" alt="moha">
+            </div>
+              <div class="col-sm-4 thumbnail">
+                <img src="images/stefan3.jpg" alt="moha">
+              </div>
+              <div class="col-sm-4 thumbnail">
+                <img src="images/stefan.jpg" alt="moha">
+              </div>
+          </div>
+        </div>
+        <hr>
+
+        </div>
+
+        <!--contact sector-->
+        <div class="modal fade"id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <img src="images/mohassan.png" alt="moha"style="border-radius:50%;width:80px;">
+                <p style="font-family:'Arizonia'">Abdullahi mohamed</p>
+              </div>
+              <div class="modal-body text-center">
+                <p><span class="glyphicon glyphicon-phone">  +254799745481</span></p>
+                <p><span class="glyphicon glyphicon-envelope"> abdullahimoh25@gmail.com</span></p>
+                <input type="text" name="numbers" value=""placeholder="input your contacts"required>
+              </div>
+              <div class="modal-footer text-center">
+                <button type="submit" class="btn btn-danger"data-dismiss="modal"id="mySubmit">submit</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--practice-->
+        <div class="modal fade"id="myPopup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-body text-center">
+                <img src="images/celeb1.jpeg" alt="cl1"style="width:70px;">
+                  <img src="images/celeb2.jpg" alt="cl2"style="width:70px;">
+                <p style="font-family:'Arizonia';font-size:44px;">thank you for contacting me</p>
+                <button type="button" class="btn btn-primary"data-dismiss="modal">close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+<script>
+  $(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("#myModal").modal('show')
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#mySubmit").click(function(){
+      $("#myPopup").modal('show')
+    });
+
+  });
+
+
+
+
+</script>
+
+
+<script>
+  $(document).ready(function(){
+    $('.nav-tabs a').click(function(){
+      $(this).tab('show')
+    });
+  });
+</script>
+
+  </body>
+</html>

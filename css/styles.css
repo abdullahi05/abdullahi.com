@@ -1,0 +1,30 @@
+h4{
+  font-family: 'Arizonia';
+  font-size: 50px;
+}
+body{
+  background-color: black;
+}
+.jina{
+  margin: auto;
+  padding: 70px;
+  color: white!important;
+}
+.nav{
+  background-color: black;
+  padding: 1px;
+  margin-top: 20px;
+}
+a{
+  color: white;
+  font-family:'Arizona';
+  font-size: 16px;
+  text-decoration: overline;
+}
+a:hover{
+  background-color: white !important;
+  text-decoration: underline;
+}
+.col-sm-4{
+  color: white;
+}
